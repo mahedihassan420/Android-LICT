@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">"List View "</string>
+    <string name="ovi">Ovi</string>
+    <string name="oviDes">My name is ovi</string>
+    <string-array name="titles">
+        <item>Asfaque</item>
+        <item>ovi</item>
+        <item>sumon</item>
+        <item>nibesh</item>
+        <item>imam</item>
+    </string-array>
+    <string-array name="description">
+        <item>Khulna</item>
+        <item>Rajshahi</item>
+        <item>Noakhali</item>
+        <item>khulna</item>
+        <item>barisal</item>
+    </string-array>
+</resources>

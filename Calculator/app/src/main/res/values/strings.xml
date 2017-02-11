@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="input">Please input the value</string>
+    <string name="dividedValue">Divide Value</string>
+    <string name="equal">=</string>
+    <string name="result">Result</string>
+    <string name="divide">/</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multi">X</string>
+    <string name="mr">MR</string>
+    <string name="mPlus">M+</string>
+    <string name="mMinus">M-</string>
+</resources>
