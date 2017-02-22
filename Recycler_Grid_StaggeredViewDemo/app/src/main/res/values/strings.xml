@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Recycler_Grid_StaggeredViewDemo</string>
+    <string name="grid">Grid View</string>
+    <string name="recycler">Recycler View</string>
+    <string name="stagger">Staggered View</string>
+    <string-array name="names">
+        <item>Ovi</item>
+        <item>Nibesh</item>
+        <item>Asfaque</item>
+        <item>Sumon</item>
+        <item>Imam</item>
+        <item>Shuvo</item>
+    </string-array>
+</resources>
