@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_second"
     android:layout_width="match_parent"
@@ -19,7 +18,9 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/totalMeal" />
+        android:hint="@string/totalMeal"
+        android:background="@color/green"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/totalFuel"
@@ -27,7 +28,9 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/totalFuel" />
+        android:hint="@string/totalFuel"
+        android:background="@color/yellow"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/extraCharge"
@@ -35,14 +38,18 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/extraCharge" />
+        android:hint="@string/extraCharge"
+        android:background="@color/green"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/cooker_PaperBill"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/cooker_Paper" />
+        android:hint="@string/cooker_Paper"
+        android:background="@color/yellow"
+        android:textStyle="bold"/>
 
 
     <EditText
@@ -51,7 +58,9 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/fullMealRate" />
+        android:hint="@string/fullMealRate"
+        android:background="@color/green"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/DayMealRate"
@@ -59,7 +68,9 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/DayMealRate" />
+        android:hint="@string/DayMealRate"
+        android:background="@color/yellow"
+        android:textStyle="bold"/>
 
     <EditText
         android:id="@+id/NightMealRate"
@@ -67,7 +78,9 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/NightMealRate" />
+        android:hint="@string/NightMealRate"
+        android:background="@color/green"
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -84,7 +97,9 @@
             android:layout_alignParentStart="true"
             android:layout_marginLeft="118dp"
             android:layout_marginStart="118dp"
-            android:layout_marginTop="15dp" />
+            android:layout_marginTop="15dp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimaryDark"/>
     </RelativeLayout>
 
 

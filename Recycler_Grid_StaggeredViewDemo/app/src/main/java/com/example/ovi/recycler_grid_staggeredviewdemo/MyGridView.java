@@ -14,6 +14,5 @@ public class MyGridView extends AppCompatActivity {
         setContentView(R.layout.activity_grid_view);
 
         myGrid=(GridView) findViewById(R.id.gridView);
-        //casting problem ,gridView select hoi na
     }
 }

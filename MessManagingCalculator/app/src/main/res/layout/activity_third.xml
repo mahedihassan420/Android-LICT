@@ -18,42 +18,55 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/deposit" />
+        android:hint="@string/deposit"
+        android:background="@color/green"
+        android:textStyle="bold"
+        />
     <EditText
         android:id="@+id/fullMealNumber"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="number"
-        android:hint="@string/fullMealNum" />
+        android:hint="@string/fullMealNum"
+        android:background="@color/yellow"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/dayMealNumber"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="number"
-        android:hint="@string/dayMealNumber" />
+        android:hint="@string/dayMealNumber"
+        android:background="@color/green"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/nightMealNumber"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="number"
-        android:hint="@string/NightMealnum" />
+        android:hint="@string/NightMealnum"
+        android:background="@color/yellow"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/feastMealCost"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/feastMealCost" />
+        android:hint="@string/feastMealCost"
+        android:background="@color/green"
+        android:textStyle="bold"/>
     <EditText
         android:id="@+id/snacksBill"
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
-        android:hint="@string/snacksBill" />
+        android:hint="@string/snacksBill"
+        android:background="@color/yellow"
+        android:textStyle="bold"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -64,22 +77,26 @@
             android:layout_height="wrap_content"
             android:id="@+id/calculateBtn"
             android:text="@string/calculate"
+            android:background="@color/colorPrimaryDark"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
             android:layout_marginLeft="20dp"
-            android:layout_marginStart="20dp" />
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"/>
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/clearBtn"
             android:text="@string/clear"
+            android:background="@color/colorPrimaryDark"
             android:layout_alignParentTop="true"
-            android:layout_toRightOf="@+id/calculateBtn"
-            android:layout_toEndOf="@+id/calculateBtn"
-            android:layout_marginLeft="41dp"
-            android:layout_marginStart="41dp" />
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp"
+            android:textStyle="bold"/>
 
     </RelativeLayout>
     <TextView
@@ -88,7 +105,9 @@
         android:id="@+id/resultView"
         android:layout_weight="1"
         android:text="@string/result"
-        android:gravity="center"/>
+        android:gravity="center"
+        android:background="@color/green"
+        android:textStyle="bold"/>
 
 
 </LinearLayout>

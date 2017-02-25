@@ -27,7 +27,7 @@ public class FragmentB extends Fragment {
     }
     public void changeData(int i){
         Resources res=getResources();
-        String descriptions[]=res.getStringArray(R.array.information);
-        textView.setText(i);
+        String descriptions[]=res.getStringArray(R.array.information_description);
+        textView.setText(descriptions[i]);
     }
 }
