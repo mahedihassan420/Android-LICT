@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "702880331416",
+    "firebase_url": "https://restaurantmanagement-2172c.firebaseio.com",
+    "project_id": "restaurantmanagement-2172c",
+    "storage_bucket": "restaurantmanagement-2172c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702880331416:android:7adcd401ca11c6b6",
+        "android_client_info": {
+          "package_name": "com.example.ovi.resturantmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702880331416-jmqp9bqm4u25s310fe43m1suen0c3q7l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBxNjYKB4g6NTYvqDdhKbcWYcERQh6aGk0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
