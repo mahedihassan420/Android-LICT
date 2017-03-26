@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Mess Managing Calculator</string>
+    <string name="welcome">Welcome</string>
+    <string name="start">Start</string>
+    <string name="totalMeal">Total Meal Number</string>
+    <string name="totalFuel">Total Fuel Charge</string>
+    <string name="extraCharge">Extra Charge</string>
+    <string name="fullMealRate">Full Meal Rate</string>
+    <string name="DayMealRate">Day Meal Rate</string>
+    <string name="NightMealRate">Night Meal Rate</string>
+    <string name="submit">Submit</string>
+    <string name="cooker_Paper"><![CDATA[Cooker & Paper Bill]]></string>
+    <string name="deposit">Deposit Balance</string>
+    <string name="fullMealNum">Full Meal Number</string>
+    <string name="dayMealNumber">Day Meal Number</string>
+    <string name="NightMealnum">Night Meal Number</string>
+    <string name="feastMealCost">Feast Meal Cost</string>
+    <string name="snacksBill">Snacks Bill</string>
+    <string name="calculate">Calculate Result</string>
+    <string name="clear">Clear</string>
+    <string name="result">Calculated Result</string>
+</resources>

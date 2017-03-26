@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Inter Fragment Communication</string>
+    <string-array name="information">
+        <item>About</item>
+        <item>SSC</item>
+        <item>HSC</item>
+        <item>UNIVERSITY</item>
+    </string-array>
+    <string-array name="information_description">
+        <item>Ovi is a Good boy . he loves his mother and all family member .</item>
+        <item>At the ssc exam he lost his younger sister </item>
+        <item>In the hsc ,he works with japanese Students</item>
+        <item>In the varsity life , he try to get a good position</item>
+    </string-array>
+
+</resources>

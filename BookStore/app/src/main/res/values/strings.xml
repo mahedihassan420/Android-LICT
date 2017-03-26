@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Book Store</string>
+    <string name="bookId">Book ID</string>
+    <string name="bookName">Book Name</string>
+    <string name="quantity">Quantity</string>
+    <string name="bookPrice">Price</string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="View">View</string>
+</resources>

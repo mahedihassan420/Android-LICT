@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">HomeWork2</string>
+    <string name="change_activity">Change Activity</string>
+    <string name="oncreate_initiated">OnCreate initiated</string>
+    <string name="onstart_initiated">OnStart initiated</string>
+    <string name="onresume_initiated">OnResume initiated</string>
+    <string name="ilsa">ইলিশ</string>
+</resources>

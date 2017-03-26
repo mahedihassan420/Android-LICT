@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Secured Communication</string>
+    <string name="plain_text">Plain Text</string>
+    <string name="text_input">Please input your plain text</string>
+    <string name="key">Key</string>
+    <string name="keyhint">Encrypt key</string>
+    <string name="encrypt_text">Encrypt Text</string>
+    <string name="submitBtn">Submit</string>
+    <string name="encrypted_txt">Encrypted Message</string>
+    <string name="clear">Clear</string>
+</resources>

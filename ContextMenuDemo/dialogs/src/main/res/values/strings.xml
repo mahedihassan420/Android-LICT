@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Dialogs</string>
+    <string name="notify_str">Notify</string>
+    <string name="dialog_str">Alert Dialog</string>
+    <string name="ring_dialog_str">Launch Ring Dialog</string>
+    <string name="bar_dialog_str">Launch Bar Dialog</string>
+</resources>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Sqlite Database</string>
+    <string name="MembeInfo">Member Info</string>
+    <string name="id">Id</string>
+    <string name="name">Name</string>
+    <string name="PhoneNumber">Phone Number</string>
+    <string name="add">Add</string>
+    <string name="View">View</string>
+    <string name="menu">Bookmark</string>
+    <string name="save">Save Menu</string>
+    <string name="delete">Delete Menu</string>
+</resources>
