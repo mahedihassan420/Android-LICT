@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sakkar.dialer.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightGray"
+        android:divider="@android:color/black">
+
+        <ImageButton
+            android:id="@+id/dialButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@android:color/darker_gray"
+            android:src="@drawable/ic_dialpad_white_36dp"/>
+        <ImageButton
+            android:id="@+id/contactButton"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/contuct_button_pressed"
+            android:src="@drawable/ic_contacts_white_36dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/call"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/call_button_pressed"
+        android:drawableBottom="@drawable/ic_call_white_48dp"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:id="@+id/keypad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/call"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button1"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_1" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_2" />
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_4" />
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_5" />
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/button7"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_7" />
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_8" />
+
+            <Button
+                android:id="@+id/button9"
+                style="@style/ButtonStyle"
+                android:text="@string/bt_9" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/buttonst"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:text="@string/bt_st" />
+
+            <Button
+                android:id="@+id/button0"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:text="@string/bt_0" />
+
+            <Button
+                android:id="@+id/buttonhs"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:text="@string/bt_hs" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_above="@id/keypad"
+        android:layout_margin="10dp"
+        android:background="@drawable/textfield">
+
+        <TextView
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textSize="35sp"
+            android:maxLength="17"/>
+
+        <ImageButton
+            android:id="@+id/backButton"
+            android:layout_gravity="center"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_backspace_white_36dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

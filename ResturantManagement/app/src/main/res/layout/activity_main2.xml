@@ -6,7 +6,52 @@
     android:orientation="vertical"
     android:gravity="center"
     android:layout_width="match_parent"
+    android:background="@color/green"
     android:layout_height="match_parent"
     tools:context="com.example.ovi.resturantmanagement.Main2Activity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/register"
+        android:textSize="45dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginBottom="7dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:background="@color/white"
+        android:id="@+id/emailReg"
+        android:layout_marginBottom="5dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/pass"
+        android:background="@color/white"
+        android:id="@+id/passReg"
+        android:layout_marginBottom="5dp"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/RegBtn"
+        android:text="@string/register" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/regUser"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign"
+            android:id="@+id/sign"/>
+    </LinearLayout>
 
 </LinearLayout>
