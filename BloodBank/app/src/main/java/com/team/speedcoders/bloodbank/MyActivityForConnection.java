@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 
 /**
- * Created by Sakkar on 1/9/2017.
+ * Created by ovi on 1/9/2017.
  */
 
 public class MyActivityForConnection extends AppCompatActivity implements View.OnClickListener ,ServerConnectionActivity.TaskDefiner {
