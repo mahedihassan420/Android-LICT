@@ -34,18 +34,9 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
         firebaseAuth = FirebaseAuth.getInstance();
 
-        if(firebaseAuth.getCurrentUser() !=null){
-            finish();
-            //start the new intent
-            Intent intent3= new Intent(getApplicationContext(),FoodList.class);
-            startActivity(intent3);
-        }
-
         signinTv = (TextView) findViewById(R.id.sign);
-
         emailEt = (EditText) findViewById(R.id.emailReg);
         passwordEt = (EditText) findViewById(R.id.passReg);
-
         btnRegister = (Button) findViewById(R.id.RegBtn);
 
         btnRegister.setOnClickListener(this);
@@ -68,8 +59,8 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
     }
 
     private void registerUser() {
-        String email= emailEt.getText().toString();
-        String password= passwordEt.getText().toString();
+        String email= emailEt.getText().toString().trim();
+        String password= passwordEt.getText().toString().trim();
         if(TextUtils.isEmpty(email)){
             Toast.makeText(this, "Please enter Correct email", Toast.LENGTH_SHORT).show();
             return;
@@ -78,7 +69,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
             Toast.makeText(this, "Please Enter password", Toast.LENGTH_SHORT).show();
             return;
         }
-        progressdialog.setMessage("Please wait some Moment");
+        progressdialog.setMessage("User is registering...");
         progressdialog.show();
         firebaseAuth.createUserWithEmailAndPassword(email,password)
                 .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -86,8 +77,6 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful()){
                             finish();
-                            Intent intent5= new Intent(Main2Activity.this,FoodList.class);
-                            startActivity(intent5);
                             Toast.makeText(Main2Activity.this, "Succesfully Register", Toast.LENGTH_SHORT).show();
 
                         }
