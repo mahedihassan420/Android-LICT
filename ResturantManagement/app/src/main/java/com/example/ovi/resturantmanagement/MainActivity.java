@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, "Please Enter password", Toast.LENGTH_SHORT).show();
             return;
         }
-        progressdialog.setMessage("User is registering...");
+        progressdialog.setMessage("User is Login...");
         progressdialog.show();
         firebaseAuth.signInWithEmailAndPassword(email,password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
             @Override
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                     startActivity(profile);
                 }
                 else {
-                    Toast.makeText(getApplicationContext(),"Registration Error",Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(),"Login Error",Toast.LENGTH_LONG).show();
                 }
                 progressdialog.dismiss();
             }

@@ -81,7 +81,7 @@ public class Main2Activity extends AppCompatActivity implements View.OnClickList
 
                         }
                         else {
-                            Toast.makeText(Main2Activity.this, "Not Register Sucessfully Please Try again!!!", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(Main2Activity.this, "Not Register .Please Try again!!!", Toast.LENGTH_SHORT).show();
                         }
                         progressdialog.dismiss();
                     }
