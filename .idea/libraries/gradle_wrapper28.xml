@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="gradle-wrapper28">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/CustomToast/gradle/wrapper/gradle-wrapper.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
