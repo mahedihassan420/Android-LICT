@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent i=new Intent();
                 i.setAction("com.ovi");
                 sendBroadcast(i);
-                //startActivity(i);
             }
         });
     }

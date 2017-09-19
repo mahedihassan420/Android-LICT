@@ -6,27 +6,6 @@
     android:layout_height="match_parent"
     tools:context="com.sakkar.dialer.MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/lightGray"
-        android:divider="@android:color/black">
-
-        <ImageButton
-            android:id="@+id/dialButton"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="@android:color/darker_gray"
-            android:src="@drawable/ic_dialpad_white_36dp"/>
-        <ImageButton
-            android:id="@+id/contactButton"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content"
-            android:background="@drawable/contuct_button_pressed"
-            android:src="@drawable/ic_contacts_white_36dp"/>
-    </LinearLayout>
 
     <Button
         android:id="@+id/call"
@@ -146,7 +125,8 @@
             android:layout_weight="1"
             android:gravity="center"
             android:textSize="35sp"
-            android:maxLength="17"/>
+            android:maxLength="17"
+            android:background="@color/colorPrimary"/>
 
         <ImageButton
             android:id="@+id/backButton"

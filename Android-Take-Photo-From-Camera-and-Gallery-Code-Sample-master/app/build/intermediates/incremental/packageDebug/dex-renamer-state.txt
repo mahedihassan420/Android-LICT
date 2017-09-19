@@ -1,0 +1,7 @@
+#Mon Sep 18 12:01:20 BDT 2017
+base.0=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d2da2a33822238988483fc6fd5c1aac60a0ad5db
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_77a2798cfa323c0a7340ad9a73c8c285acff79b9/classes.dex
+base.1=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_77a2798cfa323c0a7340ad9a73c8c285acff79b9
+file.0=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d2da2a33822238988483fc6fd5c1aac60a0ad5db/classes.dex

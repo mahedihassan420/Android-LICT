@@ -9,7 +9,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorAccent"
+    android:background="@color/colorPrimaryDark"
     tools:context="com.example.ovi.messmanagingcalculator.Second">
 
     <EditText
@@ -19,7 +19,8 @@
         android:layout_weight="1"
         android:inputType="numberDecimal"
         android:hint="@string/totalMeal"
-        android:background="@color/green"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:textStyle="bold"/>
 
     <EditText
@@ -27,9 +28,10 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:inputType="numberDecimal"
         android:hint="@string/totalFuel"
-        android:background="@color/yellow"
         android:textStyle="bold"/>
 
     <EditText
@@ -39,7 +41,8 @@
         android:layout_weight="1"
         android:inputType="numberDecimal"
         android:hint="@string/extraCharge"
-        android:background="@color/green"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:textStyle="bold"/>
     <EditText
         android:id="@+id/cooker_PaperBill"
@@ -47,8 +50,9 @@
         android:layout_height="@dimen/size0dp"
         android:layout_weight="1"
         android:inputType="numberDecimal"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:hint="@string/cooker_Paper"
-        android:background="@color/yellow"
         android:textStyle="bold"/>
 
 
@@ -59,7 +63,8 @@
         android:layout_weight="1"
         android:inputType="numberDecimal"
         android:hint="@string/fullMealRate"
-        android:background="@color/green"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:textStyle="bold"/>
 
     <EditText
@@ -69,7 +74,8 @@
         android:layout_weight="1"
         android:inputType="numberDecimal"
         android:hint="@string/DayMealRate"
-        android:background="@color/yellow"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:textStyle="bold"/>
 
     <EditText
@@ -79,7 +85,8 @@
         android:layout_weight="1"
         android:inputType="numberDecimal"
         android:hint="@string/NightMealRate"
-        android:background="@color/green"
+        android:layout_marginBottom="5dp"
+        android:background="@color/white"
         android:textStyle="bold"/>
 
     <RelativeLayout
@@ -99,7 +106,8 @@
             android:layout_marginStart="118dp"
             android:layout_marginTop="15dp"
             android:textStyle="bold"
-            android:background="@color/colorPrimaryDark"/>
+            android:layout_marginBottom="5dp"
+            android:background="@color/white"/>
     </RelativeLayout>
 
 

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/ovi/.android/build-cache/3757eda678d71f004aa60f29aed7b3d924531909/output/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_c2eaf8d14355f3058a71a375b0b56f44813ba25a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f0e013a8a57e2a31debc8fc4fb004a5f6f962cd1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f041e1409711247a0bf0a7b1e11c55da7315c898">
+        <dex dex="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_d2da2a33822238988483fc6fd5c1aac60a0ad5db/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ovi/.android/build-cache/3757eda678d71f004aa60f29aed7b3d924531909/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_82ca4cb951485cdd7c133671345fb639587475ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ovi/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_d2bbe50f56c34caa1b3663f94eb09cd042c9b4c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_77a2798cfa323c0a7340ad9a73c8c285acff79b9/classes.dex" />
+    </item>
+
+</items>

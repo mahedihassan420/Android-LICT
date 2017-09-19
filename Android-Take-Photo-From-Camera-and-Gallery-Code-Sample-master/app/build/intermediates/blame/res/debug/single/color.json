@@ -1,0 +1,46 @@
+[
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_light.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_search_url_text.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/switch_thumb_material_dark.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_material_light.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/res/merged/debug/color/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/home/ovi/.android/build-cache/d6c25e3c4c4bb61359dab5b326172ae68065971a/output/res/color/abc_background_cache_hint_selector_material_light.xml"
+    }
+]

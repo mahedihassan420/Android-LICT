@@ -34,11 +34,10 @@ class MyListAddapter extends ArrayAdapter<String> {
             String [] s=getItem(position).split("xx");
             viewHolder.getName().setText(s[0]);
             viewHolder.getAddress().setText(s[1]);
+            viewHolder.getPhone().setText(s[2]);
         }catch (Exception e){
             Toast.makeText(getContext(),"Error: "+e,Toast.LENGTH_LONG).show();
         }
-        if (position==0)
-            view.setBackgroundColor(Color.GRAY);
         return view;
     }
 }

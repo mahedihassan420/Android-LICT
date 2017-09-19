@@ -3,11 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SecuredCommunication.iml" filepath="$PROJECT_DIR$/SecuredCommunication.iml" />
-<<<<<<< HEAD
-      <module fileurl="file://$PROJECT_DIR$/SecuredCommunication.iml" filepath="$PROJECT_DIR$/SecuredCommunication.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-=======
->>>>>>> 0726bd43030bf93c176bb9dc99c0d55d5d57528e
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

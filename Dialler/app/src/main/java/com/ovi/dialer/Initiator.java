@@ -35,7 +35,7 @@ class Initiator extends Thread implements View.OnClickListener {
 
     private void setListeners() {
         back.setOnClickListener(this);
-        contactButton.setOnClickListener(this);
+        //contactButton.setOnClickListener(this);
         btn0.setOnClickListener(this);
         btn1.setOnClickListener(this);
         btn2.setOnClickListener(this);
@@ -53,7 +53,7 @@ class Initiator extends Thread implements View.OnClickListener {
 
     private void initateAll() {
         back = (ImageButton) appCompatActivity.findViewById(R.id.backButton);
-        contactButton = (ImageButton) appCompatActivity.findViewById(R.id.contactButton);
+        //contactButton = (ImageButton) appCompatActivity.findViewById(R.id.contactButton);
         btn1 = (Button) appCompatActivity.findViewById(R.id.button1);
         btn2 = (Button) appCompatActivity.findViewById(R.id.button2);
         btn3 = (Button) appCompatActivity.findViewById(R.id.button3);
@@ -99,11 +99,6 @@ class Initiator extends Thread implements View.OnClickListener {
                     appCompatActivity.startActivity(callIntent);
                     textView.setText("");
                 }
-                break;
-            case R.id.contactButton:
-                textView.setText("");
-                Intent intent=new Intent(Intent.ACTION_PICK, ContactsContract.CommonDataKinds.Phone.CONTENT_URI);
-                appCompatActivity.startActivityForResult(intent,REQUEST_CODE);
                 break;
             default:
                 s = textView.getText().toString() + ((Button) v).getText();

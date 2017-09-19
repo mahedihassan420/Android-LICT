@@ -40,12 +40,16 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()){
             case R.id.bookmark_menu:
                 Toast.makeText(MainActivity.this,"Bookmark Menu is clicked",Toast.LENGTH_SHORT).show();
+                break;
             case R.id.save_menu:
                 Toast.makeText(this,"Save Menu is clicked",Toast.LENGTH_LONG).show();
+                break;
             case R.id.delete_menu:
                 Toast.makeText(this,"Delete Menu is clicked",Toast.LENGTH_LONG).show();
-                default:
+                break;
+            default:
                     Toast.makeText(this,"No item is clicked",Toast.LENGTH_SHORT).show();
+                    break;
         }
 
         return true;

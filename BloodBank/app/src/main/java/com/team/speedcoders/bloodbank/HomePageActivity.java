@@ -36,6 +36,8 @@ public class HomePageActivity extends MyActivityForConnection implements View.On
                 startActivity(intent);
                 break;
             case R.id.inspiraion:
+                Intent intent2=new Intent(this,DonateBlood.class);
+                startActivity(intent2);
                 break;
             case R.id.last_donation:
                 blankFragment=new BlankFragment();

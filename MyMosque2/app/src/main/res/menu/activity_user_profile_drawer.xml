@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/profile"
+            android:icon="@mipmap/profile"
+            android:title="Profile" />
+        <item
+            android:id="@+id/settings"
+            android:icon="@mipmap/setting"
+            android:title="Setting" />
+        <item
+            android:id="@+id/invite_friend"
+            android:icon="@mipmap/invite"
+            android:title="Invite friends" />
+        <item
+            android:id="@+id/send_feedback"
+            android:icon="@mipmap/feedback"
+            android:title="Send feedback" />
+        <item
+            android:id="@+id/about"
+            android:icon="@mipmap/about"
+            android:title="About" />
+
+    </group>
+
+
+</menu>

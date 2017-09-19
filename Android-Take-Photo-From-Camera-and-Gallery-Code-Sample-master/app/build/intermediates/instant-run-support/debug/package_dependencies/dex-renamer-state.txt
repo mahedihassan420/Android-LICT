@@ -1,0 +1,13 @@
+#Mon Sep 18 12:01:19 BDT 2017
+renamed.3=classes4.dex
+renamed.2=classes2.dex
+renamed.1=classes3.dex
+renamed.0=classes.dex
+base.3=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_d2bbe50f56c34caa1b3663f94eb09cd042c9b4c8
+base.2=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_82ca4cb951485cdd7c133671345fb639587475ca
+base.1=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f0e013a8a57e2a31debc8fc4fb004a5f6f962cd1
+base.0=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_c2eaf8d14355f3058a71a375b0b56f44813ba25a
+file.3=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_d2bbe50f56c34caa1b3663f94eb09cd042c9b4c8/classes.dex
+file.2=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_82ca4cb951485cdd7c133671345fb639587475ca/classes.dex
+file.1=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f0e013a8a57e2a31debc8fc4fb004a5f6f962cd1/classes.dex
+file.0=/home/ovi/Android-LICT/Android-Take-Photo-From-Camera-and-Gallery-Code-Sample-master/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_c2eaf8d14355f3058a71a375b0b56f44813ba25a/classes.dex

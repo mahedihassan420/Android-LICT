@@ -10,8 +10,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_centerInParent="true"
-        android:layout_margin="@dimen/activity_horizontal_margin">
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
 
         <EditText
             style="@style/EditTextStyle"
@@ -32,7 +34,7 @@
             android:layout_margin="5dp"
             android:text="@string/login"
             android:textSize="18sp"
-            android:background="@color/green"
+            android:background="@color/colorPrimaryDark"
             android:id="@+id/login"
             android:textStyle="bold" />
 
