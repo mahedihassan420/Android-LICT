@@ -7,35 +7,115 @@
     tools:context="com.example.ovi.mymosque.YourPhone"
     android:orientation="vertical">
 
-    <LinearLayout
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:gravity="center"
-        android:paddingLeft="20dp"
-        android:layout_weight="1">
+        android:background="@color/colorDeepGreen">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/activationPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Activation Code"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/verify"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_done_black_24dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/yourPhonePgae"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Your Phone"
+                android:textColor="@color/colorWhite"
+                android:textSize="30dp" />
+
+            <ImageButton
+                android:id="@+id/submitCode"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/ic_done_white_24dp" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="24dp"
+        android:visibility="gone"
+        android:id="@+id/activation_Page">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activationMsg"
+            android:textSize="24dp"
+            android:paddingBottom="40dp"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24dp"
+            android:id="@+id/otp"
+            android:inputType="number"
+            android:hint="@string/activation_Code_Hint" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/plus_Sign"
-            android:textSize="24sp"
-            android:layout_weight="1"/>
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:maxLength="17"
-            android:inputType="phone"
-            android:layout_weight="15"
-            android:id="@+id/phoneNum"/>
-
-
+            android:text="@string/wrong_number"
+            android:paddingTop="40dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
     </LinearLayout>
 
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/verificationMsg"
-        android:paddingLeft="20dp"
-        android:textSize="24sp"
-        android:layout_weight="6"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="45dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/plus_Sign"
+                android:textSize="25dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/phoneNum"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:textSize="25dp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/verificationMsg"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"/>
+    </LinearLayout>
+
 </LinearLayout>

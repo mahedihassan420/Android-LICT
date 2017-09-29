@@ -1,4 +1,4 @@
-package com.sakkar.dialer;
+package com.ovi.dialer;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -9,12 +9,12 @@ import android.os.Bundle;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Initiator initiator;
+    com.sakkar.dialer.Initiator initiator;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        initiator=new Initiator(this);
+        initiator=new com.sakkar.dialer.Initiator(this);
     }
 
     @Override

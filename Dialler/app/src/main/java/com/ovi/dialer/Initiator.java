@@ -1,4 +1,4 @@
-package com.sakkar.dialer;
+package com.ovi.dialer;
 
 
 import android.Manifest;

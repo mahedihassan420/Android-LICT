@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">My Mosque</string>
-    <string name="name">Islamic"\n"Org App</string>
+    <string name="name">Islamic Org"\n" App</string>
     <string name="signup">Signup</string>
     <string name="activationMsg">We\'ve sent an SMS with an activation code to</string>
     <string name="activation_Code_Hint">6 digit activation code</string>
@@ -9,4 +9,10 @@
     <string name="lastName">Last name (Optional)</string>
     <string name="plus_Sign">+</string>
     <string name="verificationMsg">Please confirm your country code and enter your phone number.</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 </resources>

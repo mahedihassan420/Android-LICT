@@ -10,10 +10,17 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
+
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -21,23 +28,26 @@ import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-public class UserDetails extends AppCompatActivity {
+public class UserDetails extends AppCompatActivity implements View.OnClickListener {
 
     private int REQUEST_CAMERA = 0, SELECT_FILE = 1;
     private ImageView ivImage;
     private String userChoosenTask;
+    ImageButton saveBtn;
+    EditText fName,lName,emailAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_user_details);
         ivImage= (ImageView) findViewById(R.id.selectImage);
-        ivImage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                selectImage();
-            }
-        });
+        saveBtn= (ImageButton) findViewById(R.id.save);
+        fName= (EditText) findViewById(R.id.editText_firstName);
+        lName= (EditText) findViewById(R.id.editText_lastName);
+        emailAdd= (EditText) findViewById(R.id.editText_email);
+        saveBtn.setOnClickListener(this);
+        ivImage.setOnClickListener(this);
+
     }
     @Override
     public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
@@ -147,17 +157,53 @@ public class UserDetails extends AppCompatActivity {
 
         ivImage.setImageBitmap(bm);
     }
-    public boolean onCreateOptionsMenu(Menu menu){
-        getMenuInflater().inflate(R.menu.options_menu,menu);
-        return true;
-    }
-    public boolean onOptionsItemSelected(MenuItem menuItem) {
-        switch (menuItem.getItemId()){
-            case R.id.save:
-                startActivity(new Intent(this,UserProfile.class));
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.save:
+                saveData();
+                break;
+            case R.id.selectImage:
+                selectImage();
+                break;
+            default:
                 break;
         }
-        return true;
     }
+
+    private void saveData() {
+        final String first_name = fName.getText().toString();
+        final String last_name = lName.getText().toString();
+        final String email = emailAdd.getText().toString();
+
+        Response.Listener<String> responseListener = new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                try {
+                    JSONObject jsonResponse = new JSONObject(response);
+                    boolean success = jsonResponse.getBoolean("success");
+                    if (success) {
+                        Intent intent = new Intent(UserDetails.this,UserProfile.class);
+                        startActivity(intent);
+                    } else {
+                        AlertDialog.Builder builder = new AlertDialog.Builder(UserDetails.this);
+                        builder.setMessage("Register Failed")
+                                .setNegativeButton("Retry", null)
+                                .create()
+                                .show();
+                    }
+                } catch (JSONException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        RegisterRequest registerRequest = new RegisterRequest(first_name, last_name, email,responseListener);
+        RequestQueue queue = Volley.newRequestQueue(UserDetails.this);
+        queue.add(registerRequest);
+
+    }
+
+
 }
