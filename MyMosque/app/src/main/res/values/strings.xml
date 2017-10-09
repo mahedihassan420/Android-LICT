@@ -15,4 +15,8 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="invitation_title">My Mosque app</string>
+    <string name="invitation_message">Please join , its the nice app</string>
+    <string name="invitation_deep_link">http://google.com</string>
+    <string name="invitation_cta">Invitation CTA</string>
 </resources>

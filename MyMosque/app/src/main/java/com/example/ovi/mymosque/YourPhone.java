@@ -32,7 +32,7 @@ public class YourPhone extends AppCompatActivity implements View.OnClickListener
     EditText MobileNumber;
      FirebaseAuth mAuth;
     EditText otpEdit;
-    TextView yourPhonePage,activationPageTitle;
+    TextView yourPhonePage,activationPageTitle,wrongNumber;
     ImageButton submitOTP,verifyOTP;
     LinearLayout activationCode;
     // [START declare_auth]
@@ -55,9 +55,11 @@ public class YourPhone extends AppCompatActivity implements View.OnClickListener
         activationCode= (LinearLayout) findViewById(R.id.activation_Page);
         yourPhonePage= (TextView) findViewById(R.id.yourPhonePgae);
         verifyOTP= (ImageButton) findViewById(R.id.verify);
+        wrongNumber= (TextView) findViewById(R.id.wrong_Number);
         activationPageTitle= (TextView) findViewById(R.id.activationPage);
         submitOTP.setOnClickListener(this);
         verifyOTP.setOnClickListener(this);
+        wrongNumber.setOnClickListener(this);
 
         mCallbacks = new PhoneAuthProvider.OnVerificationStateChangedCallbacks() {
 
@@ -157,6 +159,14 @@ public class YourPhone extends AppCompatActivity implements View.OnClickListener
                 PhoneAuthCredential credential = asa.getCredential(mVerificationId,otp);
                 signInWithPhoneAuthCredential(credential);
                 break;
+            case R.id.wrong_Number:
+                MobileNumber.setVisibility(View.VISIBLE);
+                submitOTP.setVisibility(View.VISIBLE);
+                otpEdit.setVisibility(View.GONE);
+                activationCode.setVisibility(View.GONE);
+                activationPageTitle.setVisibility(View.GONE);
+                verifyOTP.setVisibility(View.GONE);
+                yourPhonePage.setVisibility(View.VISIBLE);
             default:
                 break;
         }

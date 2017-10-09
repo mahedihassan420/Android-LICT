@@ -1,5 +1,7 @@
 package com.example.ovi.mymosque;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -7,11 +9,16 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.google.android.gms.appinvite.AppInviteInvitation;
+
 public class UserProfile extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    private static final int REQUEST_INVITE = 100 ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +34,7 @@ public class UserProfile extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -83,5 +91,31 @@ public class UserProfile extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    private void onInviteClicked() {
+        Intent intent = new AppInviteInvitation.IntentBuilder(getString(R.string.invitation_title))
+                .setMessage(getString(R.string.invitation_message))
+                .setDeepLink(Uri.parse(getString(R.string.invitation_deep_link)))
+                .setCallToActionText(getString(R.string.invitation_cta))
+                .build();
+        startActivityForResult(intent, REQUEST_INVITE);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        //Log.d(TAG, "onActivityResult: requestCode=" + requestCode + ", resultCode=" + resultCode);
+
+        if (requestCode == REQUEST_INVITE) {
+            if (resultCode == RESULT_OK) {
+                // Get the invitation IDs of all sent messages
+                String[] ids = AppInviteInvitation.getInvitationIds(resultCode, data);
+                for (String id : ids) {
+                    System.out.println("onActivityResult: sent invitation " + id);
+                }
+            } else {
+                // Sending failed or it was canceled, show failure message to the user
+                // ...
+            }
+        }
     }
 }
