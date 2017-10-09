@@ -163,6 +163,7 @@ public class UserDetails extends AppCompatActivity implements View.OnClickListen
         switch (v.getId()){
             case R.id.save:
                 saveData();
+                startActivity(new Intent(UserDetails.this,UserProfile.class));
                 break;
             case R.id.selectImage:
                 selectImage();
@@ -184,8 +185,8 @@ public class UserDetails extends AppCompatActivity implements View.OnClickListen
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
                     if (success) {
-                        Intent intent = new Intent(UserDetails.this,UserProfile.class);
-                        startActivity(intent);
+                        //Intent intent = new Intent(UserDetails.this,UserProfile.class);
+                        //startActivity(intent);
                     } else {
                         AlertDialog.Builder builder = new AlertDialog.Builder(UserDetails.this);
                         builder.setMessage("Register Failed")
