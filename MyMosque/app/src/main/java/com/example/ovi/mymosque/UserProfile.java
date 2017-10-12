@@ -12,6 +12,7 @@ import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.gms.appinvite.AppInviteInvitation;
 
@@ -81,7 +82,7 @@ public class UserProfile extends AppCompatActivity
         } else if (id == R.id.nav_settings) {
 
         } else if (id == R.id.nav_invite_friends) {
-
+            onInviteClicked();
         } else if (id == R.id.nav_feedback) {
 
         } else if (id == R.id.nav_about) {
@@ -110,7 +111,7 @@ public class UserProfile extends AppCompatActivity
                 // Get the invitation IDs of all sent messages
                 String[] ids = AppInviteInvitation.getInvitationIds(resultCode, data);
                 for (String id : ids) {
-                    System.out.println("onActivityResult: sent invitation " + id);
+                    Toast.makeText(getApplicationContext(), "onActivityResult: sent invitation"  + id, Toast.LENGTH_SHORT).show();
                 }
             } else {
                 // Sending failed or it was canceled, show failure message to the user

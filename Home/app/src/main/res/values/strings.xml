@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Home Maintenace</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_home_page2">HomePage2</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="provider">Provider Register</string>
+    <string name="More">More</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Home_Maintain">Home Maintenance</string>
+    <string name="service">About Home Maintenance Service</string>
+</resources>
