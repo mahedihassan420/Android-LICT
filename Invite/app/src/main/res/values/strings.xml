@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Invite</string>
+    <string name="invitation_title">Invite</string>
+    <string name="invitation_message">Please join with us</string>
+    <string name="invitation_deep_link">http://google.com</string>
+    <string name="invitation_cta">Invitattion CTA</string>
+</resources>

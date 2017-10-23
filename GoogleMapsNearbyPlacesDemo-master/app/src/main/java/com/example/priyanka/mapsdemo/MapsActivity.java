@@ -182,11 +182,10 @@ LocationListener{
                 break;
             case R.id.B_hopistals:
                 mMap.clear();
-                String hospital = "hospital";
+                String hospital = "park";
                 String url = getUrl(latitude, longitude, hospital);
                 dataTransfer[0] = mMap;
                 dataTransfer[1] = url;
-
                 getNearbyPlacesData.execute(dataTransfer);
                 Toast.makeText(MapsActivity.this, "Showing Nearby Hospitals", Toast.LENGTH_SHORT).show();
                 break;
@@ -210,7 +209,7 @@ LocationListener{
                 dataTransfer[1] = url;
 
                 getNearbyPlacesData.execute(dataTransfer);
-                Toast.makeText(MapsActivity.this, "Showing Nearby Restaurants"+getNearbyPlacesData.placeName, Toast.LENGTH_LONG).show();
+                Toast.makeText(MapsActivity.this, "Showing Nearby Restaurants", Toast.LENGTH_LONG).show();
                 break;
             case R.id.B_to:
         }
