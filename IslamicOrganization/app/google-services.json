@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "1029663571797",
+    "firebase_url": "https://developmentproject-68bbb.firebaseio.com",
+    "project_id": "developmentproject-68bbb",
+    "storage_bucket": "developmentproject-68bbb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1029663571797:android:722819575a13af28",
+        "android_client_info": {
+          "package_name": "bd.com.hisoft.mymosque"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1029663571797-5ooqdvo2ot7iob9ghgggeg3ip48k138o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bd.com.hisoft.mymosque",
+            "certificate_hash": "f2841adff92627e9fd63092c99f0d12f286f4d6e"
+          }
+        },
+        {
+          "client_id": "1029663571797-j3rim1aosngbeo1m6lehe2gs1noaga3n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bd.com.hisoft.mymosque",
+            "certificate_hash": "b5349ccb1bca4332cede5f72f6bfde13a7cf536d"
+          }
+        },
+        {
+          "client_id": "1029663571797-vtuu7v4gn0vjcs1u9crvbrh52nbr71vm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "bd.com.hisoft.mymosque",
+            "certificate_hash": "9a3a198bd9a8ddf3b6f3a0dca45fc991c4341808"
+          }
+        },
+        {
+          "client_id": "1029663571797-sui5ilv71gq15ta5fim1t4f7nh9hemnd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6xVdhx6NUdpwV0VoREWCCGkCKwAQcJlw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1029663571797-sui5ilv71gq15ta5fim1t4f7nh9hemnd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

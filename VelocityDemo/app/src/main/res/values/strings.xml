@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Velocity Demo</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string-array name="company_list">
+        <item>Apple</item>
+        <item>Facebook</item>
+        <item>Google</item>
+        <item>Instagram</item>
+        <item>Linked in</item>
+        <item>Microsoft</item>
+        <item>MySpace</item>
+        <item>Skype</item>
+        <item>Snapchat</item>
+        <item>Twitter</item>
+        <item>Viber</item>
+        <item>Whatsapp</item>
+    </string-array>
+</resources>
