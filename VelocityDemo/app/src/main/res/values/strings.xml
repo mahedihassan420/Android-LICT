@@ -5,19 +5,13 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="description">A Brand Community in Bangladesh</string>
 
     <string-array name="company_list">
-        <item>Apple</item>
-        <item>Facebook</item>
-        <item>Google</item>
-        <item>Instagram</item>
-        <item>Linked in</item>
-        <item>Microsoft</item>
-        <item>MySpace</item>
-        <item>Skype</item>
-        <item>Snapchat</item>
-        <item>Twitter</item>
-        <item>Viber</item>
-        <item>Whatsapp</item>
+        <item>Restaurant</item>
+        <item>Hospital</item>
+        <item>Hotel</item>
+        <item>Fashion House</item>
+        <item>Parlour</item>
     </string-array>
 </resources>

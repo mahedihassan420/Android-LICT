@@ -9,85 +9,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:background="@color/colorPrimaryDark"
+    android:background="@drawable/ovi"
     tools:context="com.example.ovi.messmanagingcalculator.Second">
 
     <EditText
         android:id="@+id/totalMeal"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
+        style="@style/Design"
         android:inputType="numberDecimal"
-        android:hint="@string/totalMeal"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
-        android:textStyle="bold"/>
+        android:hint="@string/totalMeal"/>
 
     <EditText
         android:id="@+id/totalFuel"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
+        style="@style/Design"
         android:inputType="numberDecimal"
-        android:hint="@string/totalFuel"
-        android:textStyle="bold"/>
+        android:hint="@string/totalFuel"/>
 
     <EditText
         android:id="@+id/extraCharge"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
+        style="@style/Design"
         android:inputType="numberDecimal"
-        android:hint="@string/extraCharge"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
-        android:textStyle="bold"/>
+        android:hint="@string/extraCharge"/>
     <EditText
         android:id="@+id/cooker_PaperBill"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
+        style="@style/Design"
         android:inputType="numberDecimal"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
-        android:hint="@string/cooker_Paper"
-        android:textStyle="bold"/>
+        android:hint="@string/cooker_Paper"/>
 
 
     <EditText
         android:id="@+id/fullMealRate"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
+        style="@style/Design"
         android:inputType="numberDecimal"
-        android:hint="@string/fullMealRate"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
-        android:textStyle="bold"/>
+        android:hint="@string/fullMealRate"/>
 
     <EditText
         android:id="@+id/DayMealRate"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
+        style="@style/Design"
         android:inputType="numberDecimal"
-        android:hint="@string/DayMealRate"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
-        android:textStyle="bold"/>
+        android:hint="@string/DayMealRate"/>
 
     <EditText
         android:id="@+id/NightMealRate"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/size0dp"
-        android:layout_weight="1"
         android:inputType="numberDecimal"
         android:hint="@string/NightMealRate"
-        android:layout_marginBottom="5dp"
-        android:background="@color/white"
-        android:textStyle="bold"/>
+        style="@style/Design"/>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -99,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/submit"
+            android:textColor="@color/white"
             android:layout_alignParentTop="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
@@ -107,7 +73,7 @@
             android:layout_marginTop="15dp"
             android:textStyle="bold"
             android:layout_marginBottom="5dp"
-            android:background="@color/white"/>
+            android:background="@drawable/transparent"/>
     </RelativeLayout>
 
 
