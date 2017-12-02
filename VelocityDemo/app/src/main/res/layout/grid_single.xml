@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:gravity="center"
     android:id="@+id/ivLogo"
-    android:clipToPadding="false">
-
+    android:orientation="vertical"
+    android:background="@drawable/transparent">
     <TextView
-        android:id="@+id/tvCompany"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        android:background="@drawable/transparent"
-        android:alpha=".6"
-        android:gravity="center"
         android:textColor="@color/colorWhite"
-        android:textSize="15sp"/>
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/tvCompany"
+        android:gravity="center"
+        android:alpha=".6"
+        android:background="@color/colorBlack"/>
+
+</LinearLayout>

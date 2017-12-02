@@ -9,7 +9,12 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+
+import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnMenuTabClickListener;
 
 public class Main2Activity extends AppCompatActivity {
 
@@ -20,14 +25,16 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
 
+
         recyclerView=findViewById(R.id.rvMain);
 
-        int[] ids = new int[12];
+        int[] ids = new int[6];
         ids[0] = R.drawable.restaurant;
         ids[1] =  R.drawable.hospital;
         ids[2] =  R.drawable.hotel;
         ids[3] = R.drawable.fashion;
         ids[4] =R.drawable.image;
+        ids[5] =R.drawable.other;
         Resources resources=getResources();
 
         Main2Activity.MyAdapter adapter = new Main2Activity.MyAdapter(resources.getStringArray(R.array.company_list),ids);
@@ -67,7 +74,7 @@ public class Main2Activity extends AppCompatActivity {
     private class MyViewHolder extends RecyclerView.ViewHolder{
 
         public TextView name;
-        ConstraintLayout layout;
+        LinearLayout layout;
 
         public MyViewHolder(View itemView) {
             super(itemView);

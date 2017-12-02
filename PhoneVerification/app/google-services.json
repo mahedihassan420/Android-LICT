@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "728817946385",
+    "firebase_url": "https://phone-verification-12ab5.firebaseio.com",
+    "project_id": "phone-verification-12ab5",
+    "storage_bucket": "phone-verification-12ab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728817946385:android:cf316be4045bb79c",
+        "android_client_info": {
+          "package_name": "com.hisoft.ovi.phoneverification"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728817946385-1qh3q29a8ub8m6i5ripahli9tdainngo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hisoft.ovi.phoneverification",
+            "certificate_hash": "f2841adff92627e9fd63092c99f0d12f286f4d6e"
+          }
+        },
+        {
+          "client_id": "728817946385-avmfbshjgq3el2vj2v1iioela76k331r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYb0putU8hoY43BAp_fyuBygX7qy_ac00"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728817946385-avmfbshjgq3el2vj2v1iioela76k331r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

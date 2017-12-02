@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Animation Layout</string>
+    <string name="hint">Input Your name</string>
+    <string name="down">Slide Down</string>
+</resources>

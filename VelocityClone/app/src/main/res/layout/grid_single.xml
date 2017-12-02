@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="180dp"
+    android:id="@+id/ivLogo"
+    android:orientation="vertical"
+    android:text="ovi"
+    android:background="@drawable/transparent">
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/tvCompany"
+        android:gravity="center"
+
+        android:textStyle="bold"
+        android:background="@color/colorBlack"
+        android:alpha=".6"/>
+
+</LinearLayout>

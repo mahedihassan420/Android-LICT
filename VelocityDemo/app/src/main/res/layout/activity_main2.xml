@@ -16,13 +16,25 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:textColor="@color/colorWhite"
-            android:textSize="20dp"
-            android:text="AmarBrand.com"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="AmarBrand.com"
+                android:textColor="@color/colorWhite"
+                android:textSize="20dp" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Dhaka"
+                android:textColor="@color/colorWhite"
+                android:gravity="center"/>
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbarSize="1dp"></Spinner>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

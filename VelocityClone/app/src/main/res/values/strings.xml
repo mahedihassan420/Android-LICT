@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Velocity Clone</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="description">A Brand Community in Bangladesh</string>
+
+    <string-array name="company_list">
+        <item>Restaurant</item>
+        <item>Hospital</item>
+        <item>Hotel</item>
+        <item>Fashion House</item>
+        <item>Hair and Beauty</item>
+        <item>Other</item>
+    </string-array>
+
+
+</resources>
