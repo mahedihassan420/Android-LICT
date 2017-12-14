@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "11761740664",
+    "firebase_url": "https://phone-30a0b.firebaseio.com",
+    "project_id": "phone-30a0b",
+    "storage_bucket": "phone-30a0b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:11761740664:android:8111fd796719ec43",
+        "android_client_info": {
+          "package_name": "com.hisoft.ovi.phoneverify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "11761740664-ib5jmhbel3thfd171983gpv4nrspo71d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIWd_bkolOHJlCZI5jLrU6NRnrwHOY_J0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

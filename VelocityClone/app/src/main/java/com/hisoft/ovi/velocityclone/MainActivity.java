@@ -1,5 +1,7 @@
 package com.hisoft.ovi.velocityclone;
 
+import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -16,20 +18,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener, AdapterView.OnItemClickListener {
+        implements NavigationView.OnNavigationItemSelectedListener,AdapterView.OnItemClickListener {
 
     RecyclerView recyclerView;
-    Spinner spinner1;
+    Button city2;
+    String dhaka,khulna,rajshahi,chittagong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,25 +37,22 @@ public class MainActivity extends AppCompatActivity
         setSupportActionBar(toolbar);
 
         recyclerView=findViewById(R.id.rvMain);
-        spinner1 = findViewById(R.id.spinner);
+        city2=findViewById(R.id.poi);
 
-        List<String> division = new ArrayList<String>();
-        division.add("Dhaka");
-        division.add("Khulna");
-        division.add("Rangpur");
-        division.add("Rajshahi");
-        division.add("Sylhet");
-        division.add("Chittagong");
-        division.add("Mymensingh");
+        Intent iin= getIntent();
 
-        // Creating adapter for spinner
-        ArrayAdapter<String> dataAdapter = new ArrayAdapter<String>(this, R.layout.spinner_item, division);
+        if(iin!=null)
+        {
 
-        // Drop down layout style - list view with radio button
-        dataAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-
-        // attaching data adapter to spinner
-        spinner1.setAdapter(dataAdapter);
+            dhaka=iin.getStringExtra("dhaka");
+            khulna=iin.getStringExtra("khulna");
+            rajshahi=iin.getStringExtra("rajshahi");
+            chittagong=iin.getStringExtra("chittagong");
+            if(dhaka!=null){city2.setText(dhaka);}
+            else if(khulna!=null){city2.setText(khulna);}
+            else if(rajshahi!=null){city2.setText(rajshahi);}
+            else if(chittagong!=null){city2.setText(chittagong);}
+        }
 
         int[] ids = new int[6];
         ids[0] = R.drawable.restaurant;
@@ -80,23 +75,25 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView =  findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        city2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this,City.class));
+            }
+        });
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        String item = adapterView.getItemAtPosition(i).toString();
 
-        // Showing selected spinner item
-        Toast.makeText(adapterView.getContext(), "Selected: " + item, Toast.LENGTH_LONG).show();
     }
-
 
     private class MyAdapter extends RecyclerView.Adapter<MainActivity.MyViewHolder> {
 
         String[] companyList;
         int[] logoList;
 
-        public MyAdapter(String[] companyList,int[] logoList) {
+        private MyAdapter(String[] companyList,int[] logoList) {
             this.companyList = companyList;
             this.logoList=logoList;
         }
@@ -109,6 +106,7 @@ public class MainActivity extends AppCompatActivity
             return viewHolder;
         }
 
+        @SuppressLint("NewApi")
         @Override
         public void onBindViewHolder(MainActivity.MyViewHolder holder, final int position) {
             holder.layout.setBackground(getApplicationContext().getDrawable(logoList[position]));
@@ -125,7 +123,7 @@ public class MainActivity extends AppCompatActivity
         public TextView name;
         LinearLayout layout;
 
-        public MyViewHolder(View itemView) {
+        private MyViewHolder(View itemView) {
             super(itemView);
             name = itemView.findViewById(R.id.tvCompany);
             layout=itemView.findViewById(R.id.ivLogo);
@@ -134,7 +132,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer =  findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -184,7 +182,7 @@ public class MainActivity extends AppCompatActivity
 
         }
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }

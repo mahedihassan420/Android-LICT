@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">AmarBrand.com</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="khulna">Khulna</string>
+    <string name="dhaka">Dhaka</string>
+    <string name="rajshahi">Rajshahi</string>
+    <string name="chitagong">Chittagong</string>
+    <string name="description">A Brand Community in Bangladesh</string>
+    <string name="action_search">Search</string>
+    <string name="title_message">Message</string>
+    <string name="title_discount">Discount Card</string>
+</resources>

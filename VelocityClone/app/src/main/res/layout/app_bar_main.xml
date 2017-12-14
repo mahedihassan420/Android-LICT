@@ -18,6 +18,7 @@
             android:layout_height="wrap_content"
             android:background="@color/colorBlack"
             app:popupTheme="@style/AppTheme.PopupOverlay">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -30,19 +31,35 @@
                     android:text="AmarBrand.com"
                     android:textColor="@color/colorWhite"
                     android:textSize="20dp" />
-                <Spinner
-                    android:id="@+id/spinner"
+
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/colorWhite"
-                    android:layout_gravity="center"
-                    android:spinnerMode="dropdown"/>
+                    android:orientation="horizontal"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/poi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dhaka"
+                        android:textColor="@color/colorWhite"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:background="@drawable/transparent"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_pin"
+                        android:layout_gravity="center" />
+                </LinearLayout>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/description"
                     android:gravity="center"
-                    android:textColor="@color/colorWhite"/>
+                    android:text="@string/description"
+                    android:textColor="@color/colorWhite" />
             </LinearLayout>
 
         </android.support.v7.widget.Toolbar>

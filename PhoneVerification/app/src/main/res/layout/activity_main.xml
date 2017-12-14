@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.hisoft.ovi.phoneverification.MainActivity">
+    tools:context="com.hisoft.ovi.phoneverification.phoneVerify.MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

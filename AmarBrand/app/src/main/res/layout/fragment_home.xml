@@ -1,0 +1,92 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hisoft.ovi.amarbrand.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:id="@+id/hospital"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/hospital"
+                android:text="Hospital" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/fashion"
+                android:text="Fashion" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/hotel"
+                android:text="Hotel" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/image"
+                android:text="Hair and Beauty Parlour" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:layout_gravity="center"
+                android:background="@drawable/restaurant"
+                android:text="Restaurant" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="180dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:background="@drawable/other"
+                android:text="Other" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>
