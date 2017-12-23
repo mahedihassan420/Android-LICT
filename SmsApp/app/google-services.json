@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "501207549143",
+    "firebase_url": "https://sms-app-bb509.firebaseio.com",
+    "project_id": "sms-app-bb509",
+    "storage_bucket": "sms-app-bb509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:501207549143:android:876f2bd43e9fe91a",
+        "android_client_info": {
+          "package_name": "com.hisoft.ovi.smsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "501207549143-59ndm14o20tlqd15kjpkc7588h0n14nl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZqtgJxEKHAXf2IsPnCjXxg_suocrMbbo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Secured Messaging</string>
+    <string name="hint">Input pin is same as sender/receiver pin</string>
+    <string name="nm">New Message</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3364444333285227/6958188073</string>
+</resources>

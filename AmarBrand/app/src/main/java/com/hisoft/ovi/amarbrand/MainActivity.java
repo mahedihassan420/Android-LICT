@@ -148,9 +148,11 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_manage) {
 
         } else if (id == R.id.nav_share) {
+
             Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
             sharingIntent.setType("text/plain");
             String shareBodyText = "Check it out. Your message goes here";
+
             sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,"Subject here");
             sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText);
             startActivity(Intent.createChooser(sharingIntent, "Sharing Option"));
