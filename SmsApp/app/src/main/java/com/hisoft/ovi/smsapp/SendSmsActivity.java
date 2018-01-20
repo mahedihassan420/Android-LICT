@@ -18,7 +18,8 @@ import com.google.android.gms.ads.AdView;
 
 public class SendSmsActivity extends Activity {
 
-    Button sendSMSBtn, receiveSMSBtn;
+    Button sendSMSBtn;
+    ImageButton receiveSMSBtn;
     EditText toPhoneNumberET;
     EditText smsMessageET, pin;
     AdView mAdView;

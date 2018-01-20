@@ -101,14 +101,14 @@ public class ActivationCodeActivity extends MosqueBaseActivity implements IServi
                 MobileVerification mobileVerification = (MobileVerification) dtoBase;
                 preferences.setValue("selector",mobileVerification.getSelector());
                 preferences.setValue("validator",mobileVerification.getValidator());
-                if(!mobileVerification.getExist()){
+                if(mobileVerification.getExist()){
                     preferences.setValue("Mobile",mobile);
                     preferences.setValue("CountryCode",countryCode);
                     intent = new Intent(ActivationCodeActivity.this,HomePage.class);
                     intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                     startActivity(intent);
                     finish();
-                }else if(mobileVerification.getExist()){
+                }else if(!mobileVerification.getExist()){
                     intent = new Intent(ActivationCodeActivity.this,UserDetailsActivity.class);
                     bundle = new Bundle();
                     bundle.putString("mobile",mobile);

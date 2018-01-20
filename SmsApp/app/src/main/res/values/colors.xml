@@ -4,6 +4,9 @@
     <color name="colorPrimaryDark">#51d8c7</color>
     <color name="colorAccent">#FF4081</color>
     <color name="white">#ffffff</color>
+    <color name="rec_white">#fcf9f9</color>
+    <color name="recd_white">#d6d5d5</color>
     <color name="colorPri">#51d8c7</color>
-    <color name="background">#413e4f</color>
+
+    <color name="black">#000</color>
 </resources>

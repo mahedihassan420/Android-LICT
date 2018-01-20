@@ -38,6 +38,7 @@ public class ReceiveSmsActivity extends Activity implements OnItemClickListener 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_receive_sms);
+        k = Integer.parseInt(getIntent().getStringExtra("Pin"));
         smsListView = (ListView) findViewById(R.id.SMSList);
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, smsMessagesList);
         smsListView.setAdapter(arrayAdapter);
@@ -78,8 +79,7 @@ public class ReceiveSmsActivity extends Activity implements OnItemClickListener 
             for (int i = 1; i < smsMessages.length; ++i) {
                 smsMessage += smsMessages[i];
             }
-            Intent intent2=getIntent();
-             k = Integer.parseInt(intent2.getStringExtra("Pin"));
+
 
             smsMessage = Decryption.decrypt(smsMessage, k);
             String smsMessageStr = address + "\n";

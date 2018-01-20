@@ -1,34 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="fill_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="fill_parent" android:id="@+id/MainLayout"
     android:weightSum="1"
-    android:padding="5dp"
-    android:background="@color/background">
+    android:background="@color/rec_white">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@color/recd_white">
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="SMS Inbox"
-        android:textColor="@color/white"
+        android:text="Inbox"
+        android:textColor="@color/black"
         android:id="@+id/textView"
-        android:layout_gravity="center_horizontal" />
-
-    <ListView android:id="@+id/SMSList"
-        android:layout_height="389dp"
+        android:gravity="center_horizontal"
+        android:layout_weight="9"/>
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCompose"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_open_in_new_black_24dp"
         android:background="@drawable/round_corner"
+        android:layout_gravity="center_horizontal"
+        android:onClick="goToCompose" />
+
+
+</LinearLayout>
+    <ListView android:id="@+id/SMSList"
+        android:layout_height="match_parent"
         android:layout_width="match_parent"
         android:layout_margin="5dp"
         android:layout_weight="0.79" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/nm"
-        android:id="@+id/btnCompose"
-        android:background="@drawable/round_corner"
-        android:layout_gravity="center_horizontal"
-        android:onClick="goToCompose" />
 
 </LinearLayout>
