@@ -1,17 +1,25 @@
 package com.example.ovi.sqlitedatabase;
 
-import android.app.Application;
-import android.content.Context;
 import android.database.Cursor;
+import android.os.AsyncTask;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity {
     EditText id,name,phnNum;
@@ -24,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         initiateAll();
+        generateUser();
         myDb=new DatabaseSqlite(this);
         AddData();
         ViewData();
@@ -61,6 +70,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Cursor res=myDb.getAllData();
+                if(res.getCount() == 0) {
+                    // show message
+                    ShowMessage("Error","Nothing found");
+                    return;
+                }
+
                 StringBuffer buffer=new StringBuffer();
                 while (res.moveToNext()){
                     buffer.append("ID:"+res.getString(0)+"\n");
@@ -73,8 +88,14 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+    }
+
     public void ShowMessage(String data, String s) {
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
+        builder.setCancelable(true);
         builder.setTitle(data);
         builder.setMessage(s);
         builder.show();
@@ -101,5 +122,48 @@ public class MainActivity extends AppCompatActivity {
         phnNum=(EditText)findViewById(R.id.PhoneNumber);
         add=(Button)findViewById(R.id.addButton);
         view=(Button)findViewById(R.id.View);
+    }
+    private void generateUser() {
+        new AsyncTask<String, String, String>() {
+            @Override
+            protected String doInBackground(String... params) {
+                String data = "";
+
+                try {
+
+                    URL url = new URL("https://randomuser.me/api/?results=1");
+                    URLConnection con = url.openConnection();
+
+                    data = new BufferedReader(new InputStreamReader(con.getInputStream())).readLine();
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+                return data;
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                processData(s);
+            }
+        }.execute();
+    }
+    private void processData(String s) {
+        try {
+            JSONObject jsonObject = new JSONObject(s);
+            JSONArray object=jsonObject.getJSONArray("results");
+            jsonObject=object.getJSONObject(0);
+            name.setText(jsonObject.getJSONObject("name").getString("first")+" "+
+                    jsonObject.getJSONObject("name").getString("last"));
+
+            //name.setText("Email Address -"+jsonObject.getString("email"));
+            phnNum.setText(jsonObject.getString("phone"));
+
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
