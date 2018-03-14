@@ -128,7 +128,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             protected String doInBackground(String... params) {
                 String data = "";
-
                 try {
 
                     URL url = new URL("https://randomuser.me/api/?results=1");
@@ -153,12 +152,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             JSONObject jsonObject = new JSONObject(s);
             JSONArray object=jsonObject.getJSONArray("results");
-            jsonObject=object.getJSONObject(0);
-            name.setText(jsonObject.getJSONObject("name").getString("first")+" "+
-                    jsonObject.getJSONObject("name").getString("last"));
-
-            //name.setText("Email Address -"+jsonObject.getString("email"));
-            phnNum.setText(jsonObject.getString("phone"));
+            for(int i=0;i<object.length();i++){
+                jsonObject=object.getJSONObject(0);
+                String name=jsonObject.getJSONObject("name").getString("first")+" "+
+                        jsonObject.getJSONObject("name").getString("last");
+                String phnNum=jsonObject.getString("phone");
+                myDb.insertData(i+"",name,phnNum);
+            }
 
         } catch (JSONException e) {
             e.printStackTrace();
