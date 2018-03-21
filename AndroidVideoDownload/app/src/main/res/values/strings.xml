@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Android Video Download</string>
+    <string name="videoBtn">Video Download</string>
+    <string name="imageBtn">Image Download</string>
+</resources>
